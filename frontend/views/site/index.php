@@ -34,7 +34,7 @@ use frontend\widgets\viewedProduct;
                                     <div class="item <?= $i==0?'active':'' ?>">
                                         <div class="col-sm-6">
                                             <h1 style="font-size: 35px"><span><?= $item->name ?></span></h1>
-                                            <p>Giá cũ: <span class="tp_002"><?= Product::formatNumber($item->price)?></span> VND Giá giảm: <?= Product::formatNumber(($item->price*(100-$item->sale))/100).' VND'?></p>
+                                            <p><b>Giá: <span class="tp_002"><?= Product::formatNumber(($item->price*(100-$item->sale))/100)?></span> VND</b> <strike><?= $item->sale > 0 ? $item->price.' VND' : ''  ?></strike></p>
                                             <a type="button" href="<?= Url::to(['product/detail','id'=>$item->id]) ?>" class="btn btn-default get">Xem ngay</a>
                                         </div>
                                         <div class="col-sm-6">
@@ -188,9 +188,6 @@ use frontend\widgets\viewedProduct;
                                                 }
                                                 ?>
                                                 <p><?= $item->name ?></p>
-                                                <p>Dung lượng Ram <?= $item->ram ?> GB</p>
-                                                <p>Chipset: <?= $item->technology_cpu ?> GB</p>
-                                                <p>Ổ cứng <?= $item->type_hdd==1?'HDD':'SSD' ?> Dung lượng <?= $item->hdd ?></p>
                                                 <a href="<?= Url::to(['product/detail','id'=>$item->id])?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Xem cấu hình chi tiết</a>
                                             </div>
                                         </div>
