@@ -215,7 +215,7 @@ use frontend\widgets\viewedProduct;
                 </div><!--features_items-->
 
                 <?= viewedProduct::Widget()?>
-                <?= viewModal::Widget() ?>
+                <?= ViewModal::Widget() ?>
             </div>
         </div>
     </div>

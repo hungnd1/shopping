@@ -11,7 +11,7 @@ use common\models\User;
 use yii\base\Widget;
 use Yii;
 
-class viewModal extends Widget{
+class ViewModal extends Widget{
 
     public $message;
 
