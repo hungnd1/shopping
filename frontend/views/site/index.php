@@ -1,5 +1,5 @@
 <?php
-use frontend\widgets\viewModal;
+use frontend\widgets\ViewModal;
 use yii\helpers\Url;
 use frontend\widgets\viewedProduct;
 ?>
