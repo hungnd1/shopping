@@ -98,8 +98,7 @@ use yii\helpers\Url;
                                 <?php
                             }
                             ?>
-                            <h2 id="product_name"><?= $model->name ?></h2>
-                            <p>Nhà sản xuất: <?= Category::findOne(['id'=>$model->id_category])->name ?></p>
+                            <h2 id="product_name" style="font-size: 24px;"><?= $model->name ?></h2>
                             <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/product-details/rating.png" alt="" />
                                                 <span>
                                                     <span id="product_price">
