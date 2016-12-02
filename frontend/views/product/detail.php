@@ -8,7 +8,7 @@
 use common\models\Category;
 use common\models\Product;
 use frontend\widgets\viewedProduct;
-use frontend\widgets\viewModal;
+use frontend\widgets\ViewModal;
 use yii\helpers\Url;
 
 ?>
