@@ -88,10 +88,7 @@ use common\models\Product;
                                                 }
                                                 ?>
                                                 <p><?= $item->name ?></p>
-                                                <p>Dung lượng Ram <?= $item->ram ?> GB</p>
-                                                <p>Chipset: <?= $item->technology_cpu ?> GB</p>
-                                                <p>Ổ cứng <?= $item->type_hdd==1?'HDD':'SSD' ?> Dung lượng <?= $item->hdd ?></p>
-                                                <a href="<?= Url::to(['product/detail','id'=>$item->id])?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Xem cấu hình chi tiết</a>
+                                                <a href="<?= Url::to(['product/detail','id'=>$item->id])?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Xem chi tiết</a>
                                             </div>
                                         </div>
                                         <?php
