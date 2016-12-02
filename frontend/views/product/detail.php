@@ -133,7 +133,7 @@ use yii\helpers\Url;
                         </ul>
                     </div>
                     <div class="tab-content">
-                        <div class="tab-pane fade  active in" id="details" >
+                        <div class="tab-pane fade  active in" id="details" style="font-size: 24px;" >
                             <?= $model->des?$model->des:'Đang cập nhật' ?>
                         </div>
 
