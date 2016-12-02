@@ -188,7 +188,7 @@ use frontend\widgets\viewedProduct;
                                                 }
                                                 ?>
                                                 <p><?= $item->name ?></p>
-                                                <a href="<?= Url::to(['product/detail','id'=>$item->id])?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Xem cấu hình chi tiết</a>
+                                                <a href="<?= Url::to(['product/detail','id'=>$item->id])?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Xem chi tiết</a>
                                             </div>
                                         </div>
                                         <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/home/new.png" class="new" alt="" />
