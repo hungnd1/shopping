@@ -28,19 +28,19 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="status alert alert-success" style="display: none"></div>
                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
                         <div class="form-group col-md-6">
-                            <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                            <?= $form->field($model, 'name')->textInput(['autofocus' => true])->label('Họ và tên') ?>
                         </div>
                         <div class="form-group col-md-6">
-                            <?= $form->field($model, 'email') ?>
+                            <?= $form->field($model, 'email')->label('Email') ?>
                         </div>
                         <div class="form-group col-md-12">
-                            <?= $form->field($model, 'subject') ?>
+                            <?= $form->field($model, 'subject')->label('Tiêu đề') ?>
                         </div>
                         <div class="form-group col-md-12">
-                            <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+                            <?= $form->field($model, 'body')->textarea(['rows' => 6])->label('Nội dung') ?>
                         </div>
                         <div class="form-group col-md-12">
-                            <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                            <?= Html::submitButton('Gửi', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                         </div>
                     <?php ActiveForm::end(); ?>
                 </div>
@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>124 Hoàng Quốc Việt, Hà Nội</p>
                         <p>Việt Nam</p>
                         <p>Mobile: 01688 929 947</p>
-                        <p>Email: eshop@gmail.com</p>
+                        <p>Email: shopping@gmail.com</p>
                     </address>
                     <div class="social-networks">
                         <h2 class="title text-center">Kết nối với chúng tôi</h2>
