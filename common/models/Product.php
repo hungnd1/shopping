@@ -60,7 +60,7 @@ class Product extends \yii\db\ActiveRecord
     const IMAGE_TYPE_THUMBNAIL = 1; //an
     const IMAGE_TYPE_DES = 2; //an
 
-    const MAX_SIZE_UPLOAD = 1024*10*10; // dung lượng tối đa cho phép 10mb
+    const MAX_SIZE_UPLOAD = 102400; // dung lượng tối đa cho phép 10mb
 
     public $thumbnail;
     public $image_des;
