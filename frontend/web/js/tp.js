@@ -1,7 +1,7 @@
 /**
  * Created by TP on 11/19/2016.
  */
-var baseurl = window.location.origin;
+var baseurl = window.location.origin+'/';
 
 
 $(window).load (function(){
