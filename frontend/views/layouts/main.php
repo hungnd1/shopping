@@ -223,7 +223,7 @@ AppAsset::register($this);
                 <div class="col-sm-3">
                     <div class="address">
                         <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/home/map.png" alt="" />
-                        <p>Địa chỉ E-SHOPPING: 124 Hoàng Quốc Việt</p>
+                        <p>Địa chỉ E-SHOPPING: Tổ 7, Cụm 2, Phúc Xá, Ba Đình, Hà Nội</p>
                     </div>
                 </div>
             </div>

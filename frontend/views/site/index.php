@@ -83,14 +83,6 @@ use frontend\widgets\viewedProduct;
                         ?>
                     </div><!--/category-products-->
 
-                    <div class="price-range"><!--price-range-->
-                        <h2>Giá</h2>
-                        <div class="well text-center">
-                            <input type="text" class="span2" value="" data-slider-min="4000000" data-slider-max="50000000" data-slider-step="5" data-slider-value="[4000000,10000000]" id="sl2" ><br />
-                            <b class="pull-left">4000000 VND</b> <b class="pull-right">50000000 VND</b>
-                        </div>
-                    </div><!--/price-range-->
-
                     <div class="shipping text-center"><!--shipping-->
                         <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/home/shipping.jpg" alt="" />
                     </div><!--/shipping-->
@@ -100,7 +92,7 @@ use frontend\widgets\viewedProduct;
 
             <div class="col-sm-9 padding-right">
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center">Đang giảm giá</h2>
+                    <h2 class="title text-center">Rượu</h2>
                     <?php
                     if($sale){
                         foreach($sale as $item){
@@ -109,7 +101,7 @@ use frontend\widgets\viewedProduct;
                                 <div class="product-image-wrapper">
                                     <div class="tp_001 single-products">
                                         <div class="productinfo text-center">
-                                            <img src="<?= $item->getFirstImageLink() ?>" alt="<?= $item->name ?>" />
+                                            <img style="height: 170px" src="<?= $item->getFirstImageLink() ?>" alt="<?= $item->name ?>" />
                                             <h2 style="font-size: medium">Giá còn: <?= Product::formatNumber(($item->price*(100-$item->sale))/100).' VND'?></h2>
                                             <p>Giá cũ: <span class="tp_002"><?= Product::formatNumber($item->price) ?></span> VND</p>
                                             <p><?= $item->name ?></p>
@@ -150,7 +142,7 @@ use frontend\widgets\viewedProduct;
                 </div><!--features_items-->
 
                 <div class="features_items"><!--features_items-->
-                    <h2 class="title text-center">Hàng mới nhập</h2>
+                    <h2 class="title text-center">Bánh</h2>
                     <?php
                     if($product_new){
                         foreach($product_new as $item){

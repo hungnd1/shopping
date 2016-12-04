@@ -87,18 +87,16 @@ class SiteController extends Controller
         $cat = Category::find()->andWhere(['status'=>Category::STATUS_ACTIVE])->all();
         $product_new = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
-            ->andWhere(['sale'=>0])
-            ->andWhere(['>','created_at',$from])
-            ->andWhere(['<','created_at',$now])
+            ->andWhere(['id_category'=>1])
             ->orderBy(['created_at'=>'DESC'])
-            ->limit(6)
+            ->limit(9)
             ->all();
         $product_banner = Product::find()->andWhere(['status'=>Product::STATUS_ACTIVE])->andWhere(['is_banner'=>2])->all();
         $sale = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
-            ->andWhere("sale != :sale")->addParams([':sale'=>0])
+            ->andWhere(['id_category'=>2])
             ->orderBy(['created_at'=>'DESC'])
-            ->limit(6)
+            ->limit(9)
             ->all();
         return $this->render('index',[
             'cat'=>$cat,
