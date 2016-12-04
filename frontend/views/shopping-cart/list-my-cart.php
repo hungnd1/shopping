@@ -109,7 +109,7 @@ use yii\helpers\Url;
                     <ul>
                         <li>Tổng tiền <span><?=Product::formatNumber($total_all).' VND'?></span></li>
                         <li>Số lượng sản phẩm <span> <?= $totalAmount ?> Sản phẩm</span></li>
-                        <li>Phí ship <span>tổng tiền lớn hơn 500.000 sẽ được free ship</span></li>
+                        <li>Phí ship <span>Tổng tiền lớn hơn 500.000 sẽ được free ship</span></li>
                         <li>Số tiền phải thanh toán <span><?=Product::formatNumber($total_all).' VND'?></span></li>
                     </ul>
                     <?php
