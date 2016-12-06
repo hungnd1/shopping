@@ -31,13 +31,6 @@ use common\models\Product;
                         ?>
                     </div><!--/category-products-->
 
-                    <div class="price-range"><!--price-range-->
-                        <h2>Giá</h2>
-                        <div class="well text-center">
-                            <input type="text" class="span2" value="" data-slider-min="4000000" data-slider-max="50000000" data-slider-step="5" data-slider-value="[4000000,10000000]" id="sl2" ><br />
-                            <b class="pull-left">4000000 VND</b> <b class="pull-right">50000000 VND</b>
-                        </div>
-                    </div><!--/price-range-->
 
                     <div class="shipping text-center"><!--shipping-->
                         <img src="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/images/home/shipping.jpg" alt="" />

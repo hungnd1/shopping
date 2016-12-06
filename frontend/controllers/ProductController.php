@@ -42,7 +42,7 @@ class ProductController extends Controller
     public function actionIndex(){
 
 
-        $query = Product::find()->where(['status' => Product::STATUS_ACTIVE]);
+        $query = Product::find()->where(['status' => Product::STATUS_ACTIVE])->orderBy('updated_at DESC');
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count()]);
         $pageSize = Yii::$app->params['page_size'];
@@ -76,7 +76,7 @@ class ProductController extends Controller
         $query = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
             ->andWhere("sale != :sale")->addParams([':sale'=>0])
-            ->orderBy(['created_at'=>'DESC']);
+            ->orderBy('updated_at DESC');
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count()]);
         $pageSize = Yii::$app->params['page_size'];
@@ -106,7 +106,7 @@ class ProductController extends Controller
         $query = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
             ->andWhere(['id_category'=>$id_cat])
-            ->orderBy(['created_at'=>'DESC']);
+            ->orderBy('updated_at DESC');
         $countQuery = clone $query;
         $pages = new Pagination(['totalCount' => $countQuery->count()]);
         $pageSize = Yii::$app->params['page_size'];

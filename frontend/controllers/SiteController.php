@@ -88,14 +88,14 @@ class SiteController extends Controller
         $product_new = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
             ->andWhere(['id_category'=>1])
-            ->orderBy(['created_at'=>'DESC'])
+            ->orderBy('updated_at DESC')
             ->limit(9)
             ->all();
         $product_banner = Product::find()->andWhere(['status'=>Product::STATUS_ACTIVE])->andWhere(['is_banner'=>2])->all();
         $sale = Product::find()
             ->andWhere(['status'=>Product::STATUS_ACTIVE])
             ->andWhere(['id_category'=>2])
-            ->orderBy(['created_at'=>'DESC'])
+            ->orderBy('updated_at DESC')
             ->limit(9)
             ->all();
         return $this->render('index',[

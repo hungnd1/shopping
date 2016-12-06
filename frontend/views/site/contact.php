@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h2 class="title text-center">Thông tin liên hệ</h2>
                     <address>
                         <p>E-Shopping.</p>
-                        <p>124 Hoàng Quốc Việt, Hà Nội</p>
+                        <p>Tổ 7, Cụm 2, Phúc Xá, Ba Đình, Hà Nội</p>
                         <p>Việt Nam</p>
                         <p>Mobile: 01688 929 947</p>
                         <p>Email: shopping@gmail.com</p>
